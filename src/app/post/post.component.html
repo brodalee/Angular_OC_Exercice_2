@@ -1,0 +1,17 @@
+<ul class="list-group">
+    <li class="list-group-item" [ngStyle]="{'background-color': getColor()}">
+        <h3>{{ title }}</h3>
+        <p>{{ date | date }}</p>
+        <p>{{ content }}</p>
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-success" (click)="onLoveIts()">LoveIts</button>
+                <button class="btn btn-danger" (click)="onDontLoveIts()">Dont LoveIts</button>
+            </div>
+            <div class="col-md-6"></div>
+            <div class="col-md-2">
+                <p class="text-right"> <button class="btn btn-warning" (click)="onSupress()">Supprimer ce post</button></p>
+            </div>
+        </div>
+    </li>
+</ul>
